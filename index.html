@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D太阳系 - Three.js</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container"></div>
+    <div id="info-panel" class="hidden">
+        <h2 id="planet-name">行星名称</h2>
+        <div id="planet-details">
+            <p id="planet-diameter">直径: </p>
+            <p id="planet-distance">距离太阳: </p>
+            <p id="planet-orbit-period">公转周期: </p>
+            <p id="planet-rotation-period">自转周期: </p>
+            <p id="planet-description">描述: </p>
+        </div>
+        <button id="close-info">返回</button>
+    </div>
+    <div id="loading">
+        <div class="spinner"></div>
+        <div class="loading-text">加载中...</div>
+    </div>
+
+    <!-- Three.js库 -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/TextureLoader.js"></script>
+    
+    <!-- 自定义脚本 -->
+    <script src="js/planets-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
